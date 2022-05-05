@@ -16,5 +16,19 @@ namespace MegaDesk_Kevin
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            var addQuote = new AddQuote();
+            addQuote.Tag = this;
+            addQuote.Show();
+
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
