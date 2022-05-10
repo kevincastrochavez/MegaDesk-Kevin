@@ -30,5 +30,28 @@ namespace MegaDesk_Kevin
         {
             Application.Exit();
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            var viewAllQuotes = new ViewAllQuotes();
+            viewAllQuotes.Tag = this;
+            viewAllQuotes.Show();
+
+            this.Hide();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var searchQuotes = new SearchQuotes();
+            searchQuotes.Tag = this;
+            searchQuotes.Show();
+
+            this.Hide();
+        }
+
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

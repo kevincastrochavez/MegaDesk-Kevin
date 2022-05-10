@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnCancelSearch = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnCancelSearch
+            // 
+            this.btnCancelSearch.Location = new System.Drawing.Point(449, 630);
+            this.btnCancelSearch.Name = "btnCancelSearch";
+            this.btnCancelSearch.Size = new System.Drawing.Size(349, 116);
+            this.btnCancelSearch.TabIndex = 0;
+            this.btnCancelSearch.Text = "Cancel";
+            this.btnCancelSearch.UseVisualStyleBackColor = true;
+            this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
+            // 
+            // SearchQuotes
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1274, 829);
+            this.Controls.Add(this.btnCancelSearch);
+            this.Name = "SearchQuotes";
             this.Text = "SearchQuotes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SearchQuotes_FormClosed);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCancelSearch;
     }
 }

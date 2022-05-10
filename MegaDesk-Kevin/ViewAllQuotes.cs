@@ -16,5 +16,15 @@ namespace MegaDesk_Kevin
         {
             InitializeComponent();
         }
+
+        private void ViewAllQuotes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((Form)this.Tag).Show();
+        }
+
+        private void btnCancelAdd_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

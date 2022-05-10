@@ -54,6 +54,7 @@
             this.btnView.TabIndex = 1;
             this.btnView.Text = "View Quotes";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnSearch
             // 
@@ -64,6 +65,7 @@
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Serch Quote";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnExit
             // 
@@ -87,6 +89,7 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "MainMenu";
             this.Text = "MegaDesk";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenu_FormClosed);
             this.ResumeLayout(false);
 
         }
